@@ -7,7 +7,7 @@ st.text("Millify - Created by [Azaitsev](https://github.com/azaitsev/millify)")
 
 input = st.number_input("Enter a number:", value=0, min_value=0)
 st.write("The number you entered is:", input)
-t = st.radio("Select a type:", ("Precision", "Prefixes"))  
+t = st.sidebar.radio("Select a type:", ("Precision", "Prefixes"))  
 if t == "Precision":   
     res = millify(input,precision=2)
     st.markdown("## Result")
